@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#151218">
+<title>Una cita para mi Estefisita 🩶</title>
+
+<style>
+*{box-sizing:border-box}
+
+html,body{
+margin:0;
+min-height:100%;
+font-family:Georgia,"Times New Roman",serif;
+background:#100e13;
+color:#f8f2f5;
+}
+
+body{overflow:hidden}
+
+.page{
+min-height:100vh;
+display:none;
+align-items:center;
+justify-content:center;
+padding:25px 18px;
+position:relative;
+overflow:hidden;
+}
+
+.page.active{display:flex}
+
+.page:before{
+content:"";
+position:absolute;
+inset:-20%;
+background:
+radial-gradient(circle at 50% 20%,#593849 0,transparent 32%),
+radial-gradient(circle at 15% 90%,#322a31 0,transparent 34%);
+opacity:.9;
+}
+
+.stars{
+position:absolute;
+inset:0;
+background-image:radial-gradient(#fff 1px,transparent 1px);
+background-size:55px 55px;
+opacity:.11;
+}
+
+.card{
+width:min(650px,100%);
+position:relative;
+z-index:2;
+text-align:center;
+animation:entrada .8s ease;
+}
+
+@keyframes entrada{
+from{opacity:0;transform:translateY(18px)}
+to{opacity:1;transform:none}
+}
+
+.kicker{
+font:600 10px Arial,sans-serif;
+letter-spacing:4px;
+text-transform:uppercase;
+color:#d7aabd;
+}
+
+h1{
+font-size:clamp(42px,11vw,72px);
+line-height:.92;
+margin:15px 0;
+}
+
+h2{
+font-size:clamp(29px,7vw,46px);
+margin:12px 0 20px;
+}
+
+p{
+font-size:18px;
+line-height:1.7;
+color:#e9dfe4;
+}
+
+.small{
+font:12px Arial,sans-serif;
+color:#a89ca3;
+}
+
+.panel{
+background:#ffffff0a;
+border:1px solid #ffffff18;
+border-radius:25px;
+padding:24px 20px;
+box-shadow:0 18px 50px #0008;
+backdrop-filter:blur(10px);
+}
+
+.btn{
+border:0;
+border-radius:999px;
+background:#d4a0b3;
+color:#24171d;
+padding:14px 22px;
+margin-top:18px;
+font-weight:bold;
+cursor:pointer;
+box-shadow:0 10px 30px #0008;
+transition:.2s;
+}
+
+.btn:active{
+transform:scale(.96);
+}
+
+.heart{
+font-size:38px;
+letter-spacing:8px;
+color:#d7aabd;
+}
+
+.icon{
+font-size:75px;
+margin:8px 0;
+filter:drop-shadow(0 10px 18px #0006);
+}
+
+.food{
+display:flex;
+justify-content:center;
+gap:35px;
+margin:12px 0 5px;
+}
+
+.food span{
+font-size:70px;
+animation:flotar 2.4s ease-in-out infinite;
+}
+
+.food span:nth-child(2){
+animation-delay:.4s;
+}
+
+@keyframes flotar{
+50%{transform:translateY(-8px)}
+}
+
+.drinks{
+display:flex;
+justify-content:center;
+gap:35px;
+margin:10px;
+}
+
+.drinks div{
+font-size:60px;
+}
+
+.divider{
+height:1px;
+background:#ffffff18;
+margin:20px 0;
+}
+
+.quote{
+font-style:italic;
+color:#d8bfc9;
+}
+
+.final{
+font-size:clamp(21px,5.5vw,29px);
+line-height:1.55;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- PÁGINA 1 -->
+
+<section class="page active">
+
+<div class="stars"></div>
+
+<div class="card">
+
+<div class="heart">🩶 ✦ 🩶</div>
+
+<div class="kicker">
+7 de octubre • 1 año y 6 meses
+</div>
+
+<h1>
+Para mi<br>
+Estefisita
+</h1>
+
+<div class="panel">
+
+<p>
+<b>Mi princesita hermosa 🩶</b>
+</p>
+
+<p>
+Hoy cumplimos un añito y medio juntos y todavía me parece increíble todo lo que hemos vivido en este tiempo.
+</p>
+
+<p>
+Cada vez me enamoro un poquito más de vos, de tu forma de ser, de tus ocurrencias, de tus locuras y de cada pequeño detalle que te hace ser vos.
+</p>
+
+<p>
+Sos el amor de mi vida, mi niña, mi compañera y una de las personas más importantes que tengo.
+</p>
+
+<p>
+Y esta vez no quería simplemente hacerte un regalo para que lo abras y ya...
+</p>
+
+<p>
+<b>
+Quería regalarte una experiencia. 🥺🩶
+</b>
+</p>
+
+</div>
+
+<button class="btn" onclick="next()">
+¿Una cita? 👀 →
+</button>
+
+</div>
+
+</section>
+
+
+<!-- PÁGINA 2 -->
+
+<section class="page">
+
+<div class="stars"></div>
+
+<div class="card">
+
+<div class="kicker">
+Capítulo 01 • La cita
+</div>
+
+<h2>
+🌙 Nuestra noche
+</h2>
+
+<div class="panel">
+
+<p>
+Hoy será una noche especial junto a tu bebé fuerte. 🩶
+</p>
+
+<p>
+Así que alista la camita, prepara la manta y ponte cómoda...
+</p>
+
+<p>
+<b>
+Porque hoy nos toca pasarla genial viendo:
+</b>
+</p>
+
+<div class="icon">
+📺
+</div>
+
+<h2 style="margin:5px 0;font-size:30px">
+La Isla de las Tentaciones
+</h2>
+
+<p>
+JAJAJAJAJA 😭
+</p>
+
+<p>
+Vamos a ver <b>este programa de mierda</b> 😂,
+pero qué importa, si contigo hasta eso vale la pena.
+</p>
+
+<p>
+Además, tenemos que reírnos juntos de todas las locuras que pasan ahí. 😭🩶
+</p>
+
+<p class="quote">
+¿Lista para nuestra pijamada virtual?
+</p>
+
+</div>
+
+<button class="btn" onclick="next()">
+Preparar la cena →
+</button>
+
+</div>
+
+</section>
+
+
+<!-- PÁGINA 3 -->
+
+<section class="page">
+
+<div class="stars"></div>
+
+<div class="card">
+
+<div class="kicker">
+Capítulo 02 • Cena para dos
+</div>
+
+<h2>
+🍔 Mira lo que traje...
+</h2>
+
+<div class="panel">
+
+<div class="food">
+<span>🍔</span>
+<span>🍔</span>
+</div>
+
+<p>
+Mira, mi princesita...
+</p>
+
+<p>
+<b>
+Te traje una hamburguesita de pollo para vos 🥺🩶
+</b>
+</p>
+
+<p>
+Y una de carne para mí.
+</p>
+
+<p>
+Aunque...
+</p>
+
+<p>
+<b>
+podemos compartir si querés. 🥺
+</b>
+</p>
+
+<p>
+Porque obviamente todo sabe más rico cuando lo compartimos.
+</p>
+
+</div>
+
+<button class="btn" onclick="next()">
+¿Y qué vamos a tomar? →
+</button>
+
+</div>
+
+</section>
+
+
+<!-- PÁGINA 4 -->
+
+<section class="page">
+
+<div class="stars"></div>
+
+<div class="card">
+
+<div class="kicker">
+Capítulo 03 • Bebidas
+</div>
+
+<h2>
+🥤 Bebiditas
+</h2>
+
+<div class="panel">
+
+<p>
+Y obvio, mi nenita...
+</p>
+
+<p>
+<b>
+también traje bebidas.
+</b>
+</p>
+
+<div class="drinks">
+
+<div>🥤</div>
+<div>🧋</div>
+
+</div>
+
+<p>
+Para mí ya lo sabés jajaja:
+</p>
+
+<p>
+<b>
+una Coca-Cola infaltable. 😂
+</b>
+</p>
+
+<p>
+Y para vos, mi amor:
+</p>
+
+<p>
+<b>
+un Fuzetea 🥺🩶
+</b>
+</p>
+
+<div class="divider"></div>
+
+<p>
+Yyyyy...
+</p>
+
+<p>
+<b>
+la cosa no acaba ahí, mi niña. 👀
+</b>
+</p>
+
+</div>
+
+<button class="btn" onclick="next()">
+Descubrir el postre →
+</button>
+
+</div>
+
+</section>
+
+
+<!-- PÁGINA 5 -->
+
+<section class="page">
+
+<div class="stars"></div>
+
+<div class="card">
+
+<div class="kicker">
+Capítulo 04 • Para después
+</div>
+
+<h2>
+🍦 El postrecito
+</h2>
+
+<div class="panel">
+
+<div class="icon">
+🍨
+</div>
+
+<p>
+Porque obviamente no podía faltar el postrecito.
+</p>
+
+<p>
+<b>
+Traje heladito de chocolate para luego, baby. 🥺🫂🩶
+</b>
+</p>
+
+<p>
+Así que después de nuestra hamburguesita,
+nuestras bebidas y nuestro programa de mierda...
+</p>
+
+<p>
+<b>
+heladito y mantita. 😌🩶
+</b>
+</p>
+
+</div>
+
+<button class="btn" onclick="next()">
+Hay algo más... →
+</button>
+
+</div>
+
+</section>
+
+
+<!-- PÁGINA 6 -->
+
+<section class="page">
+
+<div class="stars"></div>
+
+<div class="card">
+
+<div class="heart">
+🩶
+</div>
+
+<div class="kicker">
+Capítulo final
+</div>
+
+<h2>
+Para vos, mi amor
+</h2>
+
+<div class="panel">
+
+<p class="final">
+Puede que sea simple, mi amor...
+</p>
+
+<p class="final">
+<b>
+pero todo con vos se vuelve tan especial.
+</b>
+</p>
+
+<p>
+Y sobre todo, mi amor,
+esto es algo que quiero vivir con vos.
+</p>
+
+<p>
+De verdad gracias por este año y medio de momentos inolvidables.
+</p>
+
+<p>
+Gracias por cada llamada, cada risa, cada tontería,
+cada noche y cada pequeño momento que terminó convirtiéndose en un recuerdo nuestro.
+</p>
+
+<p>
+Porque sos mi baile inolvidable...
+</p>
+
+<p class="final">
+<b>
+Te amooo mi princesita. 🩶
+</b>
+</p>
+
+<p class="small">
+Feliz 1 año y 6 meses, mi Estefisita.<br>
+Con amor, tu bebé fuerte. 🫂🩶
+</p>
+
+</div>
+
+<button class="btn" onclick="next()">
+🌙 Ahora sí... empieza nuestra cita
+</button>
+
+</div>
+
+</section>
+
+
+<!-- PÁGINA 7 -->
+
+<section class="page">
+
+<div class="stars"></div>
+
+<div class="card">
+
+<div class="heart">
+🩶 ✦ 🩶
+</div>
+
+<div class="kicker">
+Cita activada
+</div>
+
+<h2>
+Ahora sí, mi niña.
+</h2>
+
+<div class="panel">
+
+<p class="final">
+<b>
+Alista la camita.
+</b>
+</p>
+
+<p>
+Busca tu manta, ponte cómoda y espérame. 🥺🩶
+</p>
+
+<p>
+Hoy no necesitamos nada más.
+</p>
+
+<p>
+<b>
+Solo vos, yo, una hamburguesita,
+Coca-Cola, Fuzetea, heladito
+y La Isla de las Tentaciones. 😂
+</b>
+</p>
+
+<div class="divider"></div>
+
+<p class="quote">
+"Puede que la cita sea virtual,
+pero lo que siento por vos es muy real."
+</p>
+
+</div>
+
+<div class="heart">
+🌙 🩶 🌹
+</div>
+
+<p class="small">
+Te amo, mi princesita.
+</p>
+
+</div>
+
+</section>
+
+
+<script>
+
+let pagina=0;
+
+const paginas=document.querySelectorAll(".page");
+
+function next(){
+
+paginas[pagina].classList.remove("active");
+
+pagina++;
+
+if(pagina>=paginas.length){
+pagina=0;
+}
+
+paginas[pagina].classList.add("active");
+
+window.scrollTo(0,0);
+
+}
+
+</script>
+
+</body>
+  </html>
